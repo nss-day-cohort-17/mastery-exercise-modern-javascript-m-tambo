@@ -22,15 +22,8 @@ When your work in complete, push up the branch (`git push origin quiz`) and subm
 
 ### Code/Tools Requirements
 
-1. Use ES6 language features wherever you can. At a minimum, you should be using **let**, **const**, fat arrows, property shorthand, method properties, and string templates.
-1. Have a Grunt task running at all times to validate your JavaScript. We will be validating your project and we should see 0 errors.
-1. You must have a very basic, just a few, test suite that validates the core logic of the application.
-Some things to test:
-   + Instantiation of new objects creates the inheritance you expect
-   + Calculations for health, damage, armor, etc. work properly
-   + Passing in arguments to set properties like `name` or `number of arms` creates those properties
-
 1. You must use jQuery for interacting with the DOM.
+1. You muse use Bootstrap for base styling.
 
 ### Logical Requirements
 
