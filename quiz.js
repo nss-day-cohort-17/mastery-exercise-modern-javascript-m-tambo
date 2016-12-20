@@ -1,44 +1,22 @@
+// define function to clear all HTML
+function reSet () {
+  $('section').addClass('hidden');
+}
 
-$(document).ready(function() {
+reSet();
 
-  $("#homeScreen").show();
+$('#homeScreen').removeClass('hidden');
+$('body').addClass('homeScreen');
 
-    /*
-      When any button with card__link class is clicked,
-      move on to the next view.
-      */
-    $(".card__link").click(function(e) {
-      var nextCard = $(this).attr("next");
-      var moveAlong = false;
+// reSet();
 
-      switch (nextCard) {
-        case ".card--name":
-          moveAlong = (($("#bot1name").val() !== "") && ($("#bot2name").val()) !== "");
-          break;
-        case ".card--select":
-          moveAlong = ($("#player-name").val() !== "");
-          break;
-        case ".card--battleDome":
-          moveAlong = ($("#player-name").val() !== "");
-          break;
-        case ".card--gameOver":
-          moveAlong = ($("#player-name").val() !== "");
-          break;
-      }
+// $('#nameBots').removeClass('hidden');
 
-      if (moveAlong) {
-        $(".card").hide();
-        $("." + nextCard).show();
-      }
-    });
+// reSet();
 
-    /*
-      When the back button clicked, move back a view
-      */
-    $(".card__back").click(function(e) {
-      var previousCard = $(this).attr("previous");
-      $(".card").hide();
-      $("." + previousCard).show();
-    });
-
-});
+// shuffle through pages:
+// #homeScreen
+// #nameBots
+// #selectBots
+// #battledome
+// #gameOver

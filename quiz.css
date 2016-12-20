@@ -1,7 +1,11 @@
-/* entry card styling */
-#homeScreen {
-   background-color: black,
+.hidden {
+   display: none;
+}
 
+/* entry card styling */
+.homeScreen {
+   color: #aaa;
+   background-color: black;
 }
 
 /* name robot card styling*/
