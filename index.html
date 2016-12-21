@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>BattleBots</title>
+   <title>rOboT baTtLeDOme</title>
+   <link rel="shortcut icon" href="https://i.imgur.com/uWHfZ5e.png" type="image/x-icon">
    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
    <link rel="stylesheet" href="quiz.css">
@@ -40,8 +41,20 @@
          <div>
             <h1 class="text-center">sELecT rOboTs foR bAtTle</h1>
             <hr>
-         </div>
-
+         </div class="container row">
+            <div class="col-md-6">
+               <h2 id="selectBot1" class="text-center">
+               </h2><br>
+               <div class="selectBots">
+               </div>
+            </div>
+            <div class="col-md-6">
+               <h2 id="selectBot2" class="text-center">
+               </h2>
+               <br>
+               <div class="selectBots">
+               </div>
+            </div>
          <div class="container-fluid">
             <div class="row">
 
@@ -51,7 +64,7 @@
          </div>
          <div id="battleFieldLink" class="row">
             <a class="col-md-4 col-md-offset-8" href="#">
-               <h3>> to tHe bAtTleDOme! </h3></a>
+               <h3>> to tHe baTtLeDOme! </h3></a>
          </div>
       </section>
 
@@ -62,7 +75,6 @@
 
 
       <section id="gameOver">
-
 
          <div id="playAgain" class="row">
             <a class="col-md-4 col-md-offset-8" href="#">
@@ -76,5 +88,6 @@
    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
    <script type="text/javascript" src="quiz.js"></script>
+   <script type="text/javascript" src="bots.js"></script>
 </body>
 </html>
