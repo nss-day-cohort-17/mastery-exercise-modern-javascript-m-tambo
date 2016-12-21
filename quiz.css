@@ -1,6 +1,11 @@
+body {
+   font-family: 'Aldrich', sans-serif;
+}
+
 .hidden {
    display: none;
 }
+
 
 /* entry card styling */
 .homeScreen {
@@ -8,17 +13,34 @@
    background-color: black;
 }
 
+.homeScreen h1 {
+   font-size: 6.5em;
+   margin-top: 200px;
+}
+
+
 /* name robot card styling*/
+.nameBots {
+
+}
 
 
 /* choose robot card styling */
+.selectBots {
+
+}
 
 
 /* battledome styling */
+.battleDome {
+
+}
 
 
 /* game over styling */
+.gameOver{
 
+}
 
 
 /* buttons */
