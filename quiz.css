@@ -6,41 +6,52 @@ body {
    display: none;
 }
 
-
-/* entry card styling */
-.homeScreen {
-   color: #aaa;
-   background-color: black;
+/* remove link undelining */
+a:hover {
+  text-decoration: none;
 }
 
+
+/* home screen styling */
+.homeScreen {
+   color: #ccc;
+   background-color: black;
+}
 .homeScreen h1 {
    font-size: 6.5em;
    margin-top: 200px;
 }
 
 
-/* name robot card styling*/
-.nameBots {
-
+/* styling for robot naming */
+.nameBots h1 {
+   margin-top: 100px;
+   font-size: 4em;
+}
+#selectBotLink {
+   margin-top: 80px;
+}
+.field__textinput {
+   color: #428bca;
 }
 
 
-/* choose robot card styling */
+/* styling for robot selection */
 .selectBots {
 
 }
 
 
 /* battledome styling */
-.battleDome {
-
+.battleField {
+   background-image: url(http://i.imgur.com/r6tiz6S.jpg)
+}
+#battleFieldLink {
+   margin-top: 80px;
 }
 
 
 /* game over styling */
 .gameOver{
-
+   background-image: url(https://i.ytimg.com/vi/_GvgBSAKq4Q/maxresdefault.jpg)
 }
-
-
-/* buttons */

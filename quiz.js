@@ -1,20 +1,45 @@
-// define function to clear all HTML elements
+// start with the home screen
+showHomeScreen();
+
+
+// set all event listeners
+function activateEvents () {
+
+   // proceed to robot naming on link click
+   $('#entry').click(function() {
+      showNameBots();
+   });
+
+   // proceed to robot select on link click
+   $('#selectBotLink').click(function() {
+      selectBots();
+   })
+
+   // proceed to battleField
+   $('#battleFieldLink').click(function() {
+      battleField();
+   })
+
+   // return to home screen on link click
+   $('#playAgain').click(function () {
+      showHomeScreen();
+   })
+
+}
+
+activateEvents();
+
+
+// function resets all HTML elements to hidden
 function reSet () {
   $('section').addClass('hidden');
 }
 
-showHomeScreen();
 
-// set all event listeners
-
-// $('#nameBots').removeClass('hidden');
-
-// define a function to show each "page"
-
+// individual functions for displaying each "page"
 function showHomeScreen() {
    reSet();
-   $('#homeScreen').fadeIn(5000).removeClass('hidden');
-   // set home screen styling
+   $('#homeScreen').fadeIn(6789).removeClass('hidden');
    $('body').addClass('homeScreen');
 }
 
@@ -30,10 +55,11 @@ function selectBots() {
    $('body').addClass('selectBots');
 }
 
-function battleDome() {
+function battleField() {
    reSet();
-   $('#battleDome').removeClass('hidden');
-   $('body').addClass('battleDome');
+   $('#battleField').removeClass('hidden');
+   $('body').addClass('battleField');
+   // when one of the robots health <= 0, call gameOver()
 }
 
 function gameOver() {
