@@ -40,6 +40,16 @@ a:hover {
 .selectBots {
 
 }
+/* robot names */
+h2#selectBot1, h2#selectBot2 {
+   color: #3D9FF4;
+   text-shadow: 1px 1px 2px white;
+}
+.selectBots {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* battledome styling */

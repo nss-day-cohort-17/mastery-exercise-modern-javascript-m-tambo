@@ -3,7 +3,7 @@ var robot2
 
 function Robot () {
    this.name = null;
-   this.health = 50;
+   this.health = 80;
    this.attack = 50;
 };
 
@@ -12,19 +12,26 @@ function Robot () {
 // Three robot classes: Agressive, Defensive, Combo
 
 function Aggressive() {
-
+   this.class = "Agressive";
+   this.health = this.health + 10;
+   this.attack = this.attack + 25;
 };
+
 Aggressive.prototype = new Robot();
 
 
 function Defensive() {
-
+   this.class = "Defensive";
+   this.health = this.health + 25;
+   this.attack = this.attack + 10;
 };
 Defensive.prototype = new Robot();
 
 
 function Combo() {
-
+   this.class = "Combo";
+   this.health = this.health + 18;
+   this.attack = this.attack + 18;
 };
 Combo.prototype = new Robot();
 
@@ -63,7 +70,7 @@ function Broiler() {
 };
 Broiler.prototype = new Combo();
 
-function Roomba() {
+function Freezer() {
 
 };
 Freezer.prototype = new Combo();

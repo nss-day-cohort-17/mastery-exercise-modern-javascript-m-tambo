@@ -12,6 +12,7 @@ function activateEvents () {
 
    // proceed to robot select on link click
    $('#selectBotLink').click(function() {
+      // cannot continue without naming robots
       if ($('#bot1name').val() === "" || $('#bot2name').val() === "") {
          alert("mUsT aSsiGn rOboT iDenTitIes!")
       } else {
@@ -60,6 +61,11 @@ function selectBots() {
    reSet();
    $('#selectBots').removeClass('hidden');
    $('body').addClass('selectBots');
+   // populate the given robot names above robot options
+   // let robot1name = ('#bot1name').value;
+   // let robot2name = document.querySelector('#bot2name').value;
+   $('#selectBot1').text($('#bot1name').val());
+   $('#selectBot2').text($('#bot2name').val());
 }
 
 function battleField() {

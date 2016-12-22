@@ -9,13 +9,14 @@
    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+<!-- opening screen -->
    <article id="game-container">
 
       <section id="homeScreen">
          <a id="entry"><h1 class="text-center"><strong>eNteR tHe <br> baTtLeDOme</strong></h1></a>
       </section>
 
-
+   <!-- 'name robots' page -->
       <section id="nameBots" class="row">
          <div>
             <h1 class="text-center">aSsiGN rOboT iDenTiTies</h1>
@@ -29,46 +30,131 @@
                </h2>
             </div>
          </div>
-
+      <!-- link to advance to robot selection -->
          <div id="selectBotLink" class="row">
             <a class="col-md-3 col-md-offset-8" href="#">
                <h3>> sEleCt rOboTs</h3></a>
          </div>
       </section>
 
-
+   <!-- 'select robots' page -->
       <section id="selectBots">
          <div>
             <h1 class="text-center">sELecT rOboTs foR bAtTle</h1>
             <hr>
-         </div class="container row">
+         </div>
+
+         <div class="container row">
+         <!-- robot 1 selection -->
             <div class="col-md-6">
                <h2 id="selectBot1" class="text-center">
                </h2><br>
+
+            <!-- robot 1 dropdown -->
                <div class="selectBots">
+                  <div class="btn-group" role="group" aria-label="...">
+                     <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                  </div>
+               </div>
+
+               <br>
+               <div>
+               <!-- display selected robot type -->
+                  <h2 id="showBot1Type">
+                  </h2>
                </div>
             </div>
+
+
+         <!-- robot 2 selection -->
             <div class="col-md-6">
                <h2 id="selectBot2" class="text-center">
                </h2>
                <br>
+
+               <!-- robot 2 dropdown -->
                <div class="selectBots">
+                  <div class="btn-group" role="group" aria-label="...">
+                     <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                     </div>
+                     <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Dropdown link</a></li>
+                           <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <br>
+
+
+            <!-- display selected robot type -->
+               <div>
+                  <h2 id="showBot2Type">
+                  </h2>
                </div>
             </div>
-         <div class="container-fluid">
-            <div class="row">
-
-
-
-            </div>
          </div>
+
+      <!-- 'to battleField' link -->
          <div id="battleFieldLink" class="row">
             <a class="col-md-4 col-md-offset-8" href="#">
                <h3>> to tHe baTtLeDOme! </h3></a>
          </div>
       </section>
 
-
+   <!-- battleField page -->
       <section id="battleField">
 
       </section>
@@ -89,5 +175,6 @@
    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
    <script type="text/javascript" src="quiz.js"></script>
    <script type="text/javascript" src="bots.js"></script>
+   <script type="text/javascript" src="random.js"></script>
 </body>
 </html>
