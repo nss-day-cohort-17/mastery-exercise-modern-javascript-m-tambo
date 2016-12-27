@@ -40,15 +40,23 @@ a:hover {
 .selectBots {
 
 }
+
 /* robot names */
 h2#selectBot1, h2#selectBot2 {
    color: #3D9FF4;
+   /*color: #F6F961;*/
    text-shadow: 1px 1px 2px white;
 }
 .selectBots {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.selectBots select {
+   color: black;
+}
+#showBot1Type, #showBot2Type {
+   color: #F6F961;
 }
 
 
@@ -59,9 +67,28 @@ h2#selectBot1, h2#selectBot2 {
 #battleFieldLink {
    margin-top: 80px;
 }
+div {
+   max-height: 700px;
+}
+#field div {
+  background-color: #333;
+}
 
+/* stat boxes */
+#robot1stats, #robot2stats {
+
+}
+
+/* Attack button */
+button {
+  margin-top: 50px;
+}
 
 /* game over styling */
 .gameOver{
    background-image: url(https://i.ytimg.com/vi/_GvgBSAKq4Q/maxresdefault.jpg)
+}
+
+#playAgain a {
+  color: #F6F961;
 }
