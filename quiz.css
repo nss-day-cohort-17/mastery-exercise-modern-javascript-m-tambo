@@ -1,0 +1,94 @@
+body {
+   font-family: 'Aldrich', sans-serif;
+}
+
+.hidden {
+   display: none;
+}
+
+/* remove link undelining */
+a:hover {
+  text-decoration: none;
+}
+
+
+/* home screen styling */
+.homeScreen {
+   color: #ccc;
+   background-color: black;
+}
+.homeScreen h1 {
+   font-size: 6.5em;
+   margin-top: 200px;
+}
+
+
+/* styling for robot naming */
+.nameBots h1 {
+   margin-top: 100px;
+   font-size: 4em;
+}
+#selectBotLink {
+   margin-top: 80px;
+}
+.field__textinput {
+   color: #428bca;
+}
+
+
+/* styling for robot selection */
+.selectBots {
+
+}
+
+/* robot names */
+h2#selectBot1, h2#selectBot2 {
+   color: #3D9FF4;
+   /*color: #F6F961;*/
+   text-shadow: 1px 1px 2px white;
+}
+.selectBots {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selectBots select {
+   color: black;
+}
+#showBot1Type, #showBot2Type {
+   color: #F6F961;
+}
+
+
+/* battledome styling */
+.battleField {
+   background-image: url(http://i.imgur.com/r6tiz6S.jpg)
+}
+#battleFieldLink {
+   margin-top: 80px;
+}
+div {
+   max-height: 700px;
+}
+#field div {
+  background-color: #333;
+}
+
+/* stat boxes */
+#robot1stats, #robot2stats {
+
+}
+
+/* Attack button */
+button {
+  margin-top: 50px;
+}
+
+/* game over styling */
+.gameOver{
+   background-image: url(https://i.ytimg.com/vi/_GvgBSAKq4Q/maxresdefault.jpg)
+}
+
+#playAgain a {
+  color: #F6F961;
+}
